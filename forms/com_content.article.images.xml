@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="attribs">
+	
+		<fieldset name="images" label="Images">
+		
+			<fields name="images">
+			
+				<field name="icon"
+					label="icon/logo/thumbnail"
+					type="media"
+					class="span-12"
+					groupClass="asdddddd"
+				/>
+				
+				<fields name="gallery">
+				
+					<field
+						name="show"
+						label="Show gallery"
+						type="radio"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+					
+					<field
+						name="title"
+						label="Gallery Title"
+					/>
+					
+					<field
+						name="images"
+						label="Gallery images"
+						type="subform"
+						class="fl-subform-parent"
+						formsource="plugins/system/flcustomfields/forms/subforms/images.xml"
+						multiple="true"
+						layout ="joomla.form.field.subform.repeatable-table"
+					/>
+				
+				</fields>
+				
+			</fields>
+			
+		</fieldset>
+	
+	</fields>
+	
+</form>

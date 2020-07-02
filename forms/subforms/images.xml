@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="src"
+		label="image"
+		type="media"
+		required="true"
+	/>
+	<field name="alt"
+		type="text"
+		label="alt"
+		required="true"
+	/>
+</form>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="social" label="Social">
+			
+			<fields name="social">
+			
+				<field
+					name="show"
+					label="show"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="header"
+					type="text"
+					label="Заголовок"
+					class="input-xxlarge"
+					showon="show:1"
+				/>
+				
+				<field
+					name="text"
+					type="textarea"
+					label="Текст"
+					class="input-xxlarge"
+					showon="show:1"
+				/>
+				
+				<field
+					name="links"
+					label="Social links"
+					type="subform"
+					class="fl-subform-parent"
+					formsource="plugins/system/flcustomfields/forms/subforms/links.xml"
+					multiple="true"
+					layout ="joomla.form.field.subform.repeatable-table"
+					showon="show:1"
+				/>
+			
+			</fields>
+			
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="params" label="Params">
+			
+			<field
+				name="layout"
+				type="componentlayout"
+				label="JFIELD_ALT_LAYOUT_LABEL"
+				description="JFIELD_ALT_COMPONENT_LAYOUT_DESC"
+				extension="com_contact"
+				view="contact"
+				useglobal="true"
+			/>
+			
+		</fieldset>
+	</fields>
+</form>

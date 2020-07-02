@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field
+		name="type"
+		type="hidden"
+		value="gameServer"
+	/>
+	
+	<field
+		name="name"
+		type="list"
+		label="Name"
+	>
+		<option value="facebook">Facebook</option>
+		<option value="kongregate">Kongregate</option>
+	</field>
+	
+	<field
+		name="publish"
+		type="list"
+		label="publish"
+		defauilt="0"
+		class="chzn-color-state"
+	>
+		<option value="1">JYES</option>
+		<option value="0">JNO</option>
+	</field>
+	
+	<field
+		name="url"
+		type="text"
+		label="url"
+	/>
+</form>

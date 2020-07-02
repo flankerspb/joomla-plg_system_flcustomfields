@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	
+	<field
+		name="image"
+		type="media"
+		label="image"
+	/>
+	
+	<field
+		name="title"
+		type="text"
+		label="title"
+	/>
+	
+	<field
+		name="text"
+		type="text"
+		label="text"
+	/>
+	
+</form>

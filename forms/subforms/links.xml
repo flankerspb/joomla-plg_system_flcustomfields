@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field
+		name="title"
+		type="text"
+		label="title"
+	/>
+	
+	<field
+		name="url"
+		type="url"
+		label="URL"
+	/>
+	
+	<field
+		name="target"
+		type="list"
+		label="Target"
+	>
+		<option value="">_self</option>
+		<option value="_blank">_blank</option>
+		<option value="_parent">_parent</option>
+		<option value="_top">_top</option>
+	</field>
+	
+	<field
+		name="class"
+		type="text"
+		label="Class"
+	/>
+	
+</form>

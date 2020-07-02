@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="params" >
+		<fieldset name="flcustomfields-basic" label="Доп. данные">
+			
+			<field
+				name="type"
+				type="list"
+				label="Type"
+				required="true"
+			>
+				<option value="Person">Person</option>
+				<option value="Organization">Organization</option>
+			</field>
+			
+			<field
+				name="add_types"
+				label="Additional Types"
+				type="list"
+				multiple="true"
+			>
+				<option value="LocalBusiness">LocalBusiness</option>
+			</field>
+			
+			<field
+				name="name"
+				type="text"
+				label="Наименование"
+				class="input-xxlarge"
+			/>
+			
+			<field
+				name="legal_name"
+				type="text"
+				label="Юридическое наименование"
+				class="input-xxlarge"
+			/>
+			
+			<field
+				name="founding_date"
+				type="calendar"
+				label="Дата основания"
+				showtime="false"
+				weeknumbers="false"
+				todaybutton="false"
+				minyear="2000"
+			/>
+			
+			<field
+				name="alter_names"
+				label="Alternate Names"
+				type="subform"
+				formsource="plugins/system/flcustomfields/forms/subforms/altername.xml"
+				multiple="true"
+				layout ="joomla.form.field.subform.repeatable-table"
+			/>
+			
+			<field
+				name="same_as"
+				label="sameAs"
+				type="subform"
+				formsource="plugins/system/flgsd/forms/subforms/value.xml"
+				multiple="true"
+				layout ="joomla.form.field.subform.repeatable-table"
+				class="form-vertical"
+			/>
+			
+			<field
+				name="openhours_text"
+				label="Часы работы (текст)"
+				type="text"
+			/>
+			
+			<field
+				name="openhours"
+				label="Часы работы"
+				type="subform"
+				formsource="plugins/system/flcustomfields/forms/subforms/openhours.xml"
+				multiple="true"
+				layout ="joomla.form.field.subform.repeatable-table"
+			/>
+			
+			<field
+				name="area_served"
+				label="areaServed"
+				type="subform"
+				formsource="plugins/system/flcustomfields/forms/subforms/areas.xml"
+				multiple="true"
+				layout ="joomla.form.field.subform.repeatable-table"
+			/>
+			
+			<field
+				name="offers"
+				label="offers"
+				type="subform"
+				formsource="plugins/system/flcustomfields/forms/subforms/offers.xml"
+				multiple="true"
+				layout ="joomla.form.field.subform.repeatable-table"
+			/>
+			
+		</fieldset>
+	</fields>
+</form>

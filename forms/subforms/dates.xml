@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	
+	<field
+		name="start"
+		type="calendar"
+		label="start"
+		showtime="false"
+		weeknumbers="false"
+		todaybutton="false"
+		minyear="2000"
+		required="true"
+	/>
+	
+	<field
+		name="end"
+		type="calendar"
+		label="end"
+		showtime="false"
+		weeknumbers="false"
+		todaybutton="false"
+		minyear="2000"
+		required="true"
+	/>
+	
+	<field
+		name="comment"
+		type="text"
+		label="comment"
+	/>
+	
+</form>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="flcustomfields-maps" label="Maps">
+		
+		<field
+			name="use_maps"
+			type="list"
+			label="PLG_SYSTEM_FLCUSTOMFIELDS_USE_MAPS"
+			default="0"
+			class="chzn-color-state"
+			>
+			
+			<option value="0">JNO</option>
+			<option value="gmaps">PLG_SYSTEM_FLCUSTOMFIELDS_GMAPS</option>
+			<option value="yamaps">PLG_SYSTEM_FLCUSTOMFIELDS_YAMAPS</option>
+		</field>
+		
+		<field
+			name="maps_zoom"
+			type="number"
+			label="PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_ZOOM"
+			default="16"
+			min="1"
+			max="20"
+			showon="use_maps!:0"
+		/>
+		
+		<field
+			name="gmaps_apikey"
+			type="text"
+			label="PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_APIKEY"
+			showon="use_maps:gmaps"
+		/>
+		
+		<field
+			name="gmaps_type"
+			type="list"
+			label="PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE"
+			default="roadmap"
+			class="chzn-color"
+			showon="use_maps:gmaps"
+		>
+			<option value="roadmap">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_MAP</option>
+			<option value="terrain">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_TERRAIN</option>
+			<option value="satellite">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_SATELLITE</option>
+			<option value="hybrid">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_HYBRID</option>
+		</field>
+		
+		<field
+			name="yamaps_apikey"
+			type="text"
+			label="PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_APIKEY"
+			showon="use_maps:yamaps"
+		/>
+		
+		<field
+			name="yamaps_type"
+			type="list"
+			label="PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE"
+			default="map"
+			class="chzn-color"
+			showon="use_maps:yamaps"
+		>
+			<option value="map">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_MAP</option>
+			<option value="satellite">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_SATELLITE</option>
+			<option value="hybrid">PLG_SYSTEM_FLCUSTOMFIELDS_MAPS_TYPE_HYBRID</option>
+		</field>
+		
+	</fieldset>
+</form>

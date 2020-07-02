@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="flcustomfields-props" label="Реквизиты">
+			
+			<fields name="props">
+			
+				<field
+					name="show"
+					label="show"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="data"
+					label="Реквизиты"
+					type="subform"
+					formsource="plugins/system/flcustomfields/forms/subforms/props.xml"
+					multiple="true"
+					layout ="joomla.form.field.subform.repeatable-table"
+				/>
+			
+			</fields>
+			
+		</fieldset>
+	</fields>
+</form>

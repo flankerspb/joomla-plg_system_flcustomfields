@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<field
+		name="name"
+		type="list"
+		label="Name"
+	>
+		<option value="iOS">iOS</option>
+		<option value="Android">Android</option>
+		<option value="Windows">Windows</option>
+		<option value="macOS">macOS</option>
+		<option value="SteamOS &amp; Linux">SteamOS &amp; Linux</option>
+		<option value="Linux">Linux</option>
+		<option value="SteamOS">SteamOS</option>
+	</field>
+	
+	<field
+		name="version"
+		type="text"
+		label="Version"
+	/>
+</form>

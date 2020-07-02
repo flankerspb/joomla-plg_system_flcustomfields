@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="attribs">
+		<fields name="schema">
+			<fieldset name="Schema" label="Schema">
+				
+				<field
+					name="alter_names"
+					label="Alter Names"
+					type="subform"
+					class="fl-subform-parent"
+					formsource="plugins/system/flcustomfields/forms/subforms/names.xml"
+					multiple="true"
+					layout ="joomla.form.field.subform.repeatable-table"
+				/>
+			
+			</fieldset>
+		</fields>
+	</fields>
+</form>
