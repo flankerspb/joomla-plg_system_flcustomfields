@@ -150,7 +150,7 @@ class plgSystemFlcustomfields extends JPlugin {
 			
 			// fixes for menu items
 			if ($formName == 'com_menus.item')
-				$formName = 'com_menus.' . $data->request['option'] . '_' . $data->request['view'];
+				$formName = 'com_menus.' . $_REQUEST['option'] . '_' . $_REQUEST['view'];
 			
 			// Show info message
 			if (isset($params->info) && $params->info)
